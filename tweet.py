@@ -1,5 +1,5 @@
-#		Twitter Python Connection
-#
+# TwtPy
+#		
 # Andresito de Guzman
 #
 import twitter
