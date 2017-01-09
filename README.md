@@ -10,32 +10,32 @@ Download the repo. Install python-twitter through pip. Generate keys and tokens.
 ## How to use
 Start Python
 ```python
-python
+$ python
 ```
 Import TwtPy via tweet
 ```python
-import tweet
+>>> import tweet
 ```
 Start Using it
 
 ## Basic Usage
 Check your Name
 ```python
-tweet.whoami()
+>>> tweet.whoami()
 ```
 Check your username/screen name
 ```python
-tweet.username()
+>>> tweet.username()
 ```
 Tweet Something
 ```python
-status = "Hello World"
-tweet.tweet(status)
+>>> status = "Hello World"
+>>> tweet.tweet(status)
 ```
 Search for Tweets
 ```python
-query = "Your Query Here"
-tweet.tweet(query)
+>>> query = "Your Query Here"
+>>> tweet.tweet(query)
 ```
 
 ## Note
