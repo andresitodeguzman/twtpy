@@ -32,6 +32,11 @@ Tweet Something
 status = "Hello World"
 tweet.tweet(status)
 ```
+Search for Tweets
+```python
+query = "Your Query Here"
+tweet.tweet(query)
+```
 
 ## Note
 - Please do not rename tweet.py as twitter.py
