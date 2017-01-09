@@ -9,7 +9,7 @@ Download the repo. Install python-twitter through pip. Generate keys and tokens.
 
 ## How to use
 Start Python
-```python
+```
 $ python
 ```
 Import TwtPy via tweet
