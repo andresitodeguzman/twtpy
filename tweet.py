@@ -28,5 +28,17 @@ def whoami():
 
 ## Check your Username/Screen Name
 def username():
-    print("Your username is @" + person.screen_name)
+        print("Your username is @" + person.screen_name)
 
+## Search
+def search(query):
+    if(query == ""):
+        print("Cannot search empty query")
+    else:
+            q = api.GetSearch(query)
+            print("Here are the results for " + query + ":\n\n")
+            for status in q:
+                name = status.user.name
+                username = status.user.screen_name
+                text = status.text
+                print(name + " (" + username + "): " + text + "\n")

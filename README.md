@@ -5,7 +5,7 @@ Super lightweight twitter client for Python used for personal projects.
 - Twitter-Python
 
 ## Setup
-Once you have the necessary keys and tokens, open auth.py and insert them.
+Download the repo. Install python-twitter through pip. Generate keys and tokens. Once you have the necessary keys and tokens, open auth.py and insert them.
 
 ## How to use
 Start Python
@@ -21,7 +21,7 @@ Start Using it
 ## Basic Usage
 Check your Name
 ```python
-tweet.whoamI()
+tweet.whoami()
 ```
 Check your username/screen name
 ```python
