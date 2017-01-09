@@ -6,9 +6,13 @@ Super lightweight twitter client for Python used for personal projects.
 
 ## How to use
 - Start Python
-'python'
+'''python
+python
+'''
 - Import TwtPy via tweet
-'import tweet'
+'''python
+import tweet
+'''
 - Start Using it
 
 ## Note
