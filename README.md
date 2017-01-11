@@ -37,6 +37,17 @@ Search for Tweets
 >>> query = "Your Query Here"
 >>> tweet.tweet(query)
 ```
+Send a DM
+```python
+>>> to = "username"
+>>> message = "Hi!"
+>>> tweet.sendDM(to, message)
+```
+
+Get DMs (last 20 DMs Recieved)
+```python
+>>> tweet.getDM()
+```
 
 ## Note
 - Please do not rename tweet.py as twitter.py

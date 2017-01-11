@@ -30,6 +30,32 @@ def whoami():
 def username():
         print("Your username is @" + person.screen_name)
 
+## Send a DM
+def sendDM(to, message):
+   if(to == ""):
+      return "You cannot send a message to an empty recepient"
+   else:
+      if(message == ""):
+         return "Message cannot be empty"
+      else:
+         api.PostDirectMessage(screen_name=to, text=message)
+         print("DM Sent to " + to)
+
+## Retrieve DMs
+def getDM():
+   dms = api.GetDirectMessages()
+   if dms:
+      for dm in dms:
+         sender = dm.sender.name
+         sender_screen = dm.sender.screen_name
+         text = dm.text
+         date = dm.created_at
+         print(sender + " (@" + sender_screen + "):")
+         print("   " + text)
+         print("[" + date + "]\n\n")
+   else:
+      return "No DMs or Error Getting them"
+
 ## Search
 def search(query):
     if(query == ""):
