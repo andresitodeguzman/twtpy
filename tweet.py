@@ -56,6 +56,13 @@ def getDM():
    else:
       return "No DMs or Error Getting them"
 
+## Display Followers
+def followers():
+    f = api.GetFollowers()
+    print("Your Followers:\n\n")
+    for follower in f:
+        print(follower.name + " (@" + follower.screen_name + ")\n")
+
 ## Search
 def search(query):
     if(query == ""):

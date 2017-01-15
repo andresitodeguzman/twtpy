@@ -37,6 +37,10 @@ Search for Tweets
 >>> query = "Your Query Here"
 >>> tweet.tweet(query)
 ```
+See your Followers
+```python
+>>> tweet.followers()
+```
 Send a DM
 ```python
 >>> to = "username"
