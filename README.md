@@ -1,5 +1,5 @@
 # TwtPy
-Super lightweight twitter client for Python used for personal projects.
+Super lightweight twitter client for Python used for personal projects. No need for long Twitter APIs. Use Twitter in Python.
 
 ## Needed Module(s)
 - Twitter-Python
@@ -32,6 +32,11 @@ Tweet Something
 >>> status = "Hello World"
 >>> tweet.tweet(status)
 ```
+Tweet Something (without explicit response)
+```python
+>>> status = "Hello World"
+>>> tweet.update(status)
+```
 Search for Tweets
 ```python
 >>> query = "Your Query Here"
@@ -40,6 +45,16 @@ Search for Tweets
 See your Followers
 ```python
 >>> tweet.followers()
+```
+Follow Someone
+```python
+>>> username = "username_here"
+>>> tweet.follow(username)
+```
+Unfollow Someone
+```python
+>>> username = "username_here"
+>>> tweet.unfollow(username)
 ```
 Send a DM
 ```python

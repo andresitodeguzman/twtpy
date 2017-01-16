@@ -14,6 +14,14 @@ api = twitter.Api(
 
 person = api.VerifyCredentials()
 
+## Tweet Silently (uses return instead of print [best for python programs])
+def update(status):
+    if status:
+        s = api.PostUpdate(status)
+        return s
+    else:
+        return "Error sending tweet"
+
 ## Tweet
 def tweet(status):
 	if(status == ""):
@@ -21,6 +29,21 @@ def tweet(status):
 	else:
 		status = api.PostUpdate(status)
 		print("You just tweeted: " + status.text)	
+
+## Unfollow
+def unfollow(username):
+    if username:
+        api.DestroyFriendship(screen_name=username)
+        print("Unfollowed " + str(username))
+    else:
+        print("Username cannot be empty")
+## Follow
+def follow(username):
+    if username:
+        api.CreateFriendship(screen_name=username)
+        print("Followed " + str(username))
+    else:
+        print("Username cannot be empty")
 
 ## Check your Name
 def whoami():
