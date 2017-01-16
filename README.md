@@ -32,7 +32,7 @@ Tweet Something
 >>> status = "Hello World"
 >>> tweet.tweet(status)
 ```
-Tweet Something (without explicit response)
+Tweet Something (without printing any response)
 ```python
 >>> status = "Hello World"
 >>> tweet.update(status)
