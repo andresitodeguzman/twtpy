@@ -1,8 +1,9 @@
 # TwtPy
 Super lightweight twitter client for Python used for personal projects. No need for long Twitter APIs. Use Twitter in Python.
 
-## Needed Module(s)
-- Twitter-Python
+## Requirements
+- Python3
+- Twitter-Python Module
 
 ## Setup
 Download the repo. Install python-twitter through pip. Generate keys and tokens. Once you have the necessary keys and tokens, open auth.py and insert them.
