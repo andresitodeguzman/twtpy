@@ -1,6 +1,8 @@
 # TwtPy
 Super lightweight twitter client for Python used for personal projects. No need for long Twitter APIs. Use Twitter in Python.
 
+[![BCH compliance](https://bettercodehub.com/edge/badge/andresitodeguzman/twtpy?branch=master)](https://bettercodehub.com/)
+
 ## Requirements
 - Python3
 - Twitter-Python Module
